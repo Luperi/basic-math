@@ -1,38 +1,69 @@
-.App {
+.operationTable input {
+  text-align: right;
+  border: none;
+}
+
+.form-control:focus {
+  box-shadow: none!important;
+}
+
+.opInsertionArea {
+  min-height: 380px;
+}
+
+.counterBall {
+  background-color: #00b3e7;
+  border-radius: 50%;
+  position: relative;
+  color: #ffffff;
   text-align: center;
+  font-size: 3em;
+  line-height: 92px;
+  width: 9%;
+  height: 9%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: inline-block;
+  margin: 10px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.counterButtonContainer button {
+  font-size: 2.5em;
+  height: 115px;
+  width: 175px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.counterBallsContainer {
+  min-height: 115px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.numberCol, .resultCol {
+  padding: .75rem 0;
+  width: 70px!important;
 }
 
-.App-link {
-  color: #61dafb;
+table tr td.numberCol:nth-last-child(2) {
+  border-color: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table tr td.numberCol:nth-last-child(3) {
+  border-color: red;
+}
+
+table tr td.numberCol:nth-last-child(4) {
+  border-right-color: red;
+}
+
+table tr td.resultCol:nth-last-child(1) {
+  border-color: blue;
+}
+
+table tr td.resultCol:nth-last-child(2) {
+  border-color: red;
+}
+
+table tr td.resultCol:nth-last-child(3) {
+  border-right-color: red;
 }
