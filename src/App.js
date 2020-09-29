@@ -40,6 +40,7 @@ class OperationTable extends React.Component {
           <Form.Control
             size="lg"
             type="number"
+            onfo
           />
         </Form.Group>
       </td>
@@ -87,7 +88,6 @@ class App extends React.Component {
       isDiff: undefined,
       num1: null,
       num2: null,
-      operation: '12+36',
       counter: 0
     };
   }
@@ -179,6 +179,9 @@ class App extends React.Component {
         <Row className="counterButtonContainer">
           <Button variant="primary" onClick={() => this.setState({ counter: (this.state.counter + 1) % 10 })}>
             Conta!
+            </Button>
+          <Button variant="danger" onClick={() => this.setState({ counter: 0 })}>
+            Azzera
             </Button>
         </Row>
       </Container>
